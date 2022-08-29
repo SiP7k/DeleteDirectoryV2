@@ -9,9 +9,9 @@ namespace DeleteDirectoryV2
         {
             string path = "C:\\Users/cavva/Desktop/sss";
             DirectoryInfo dirInfo = new DirectoryInfo(path);
-            GetSize(dirInfo);
+            Console.WriteLine("Исходный размер папки: " + GetSize(dirInfo) + " байт"); 
             DeleteCatalog(dirInfo);
-            GetSize(dirInfo);
+            Console.WriteLine("Текущий размер папки: " + GetSize(dirInfo) + " байт"); 
             Console.ReadKey();
         }
         static public void DeleteCatalog(DirectoryInfo dirInfo)
